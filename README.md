@@ -36,7 +36,7 @@ Gen 3 is a marketing and informational site for a wellness clinic. It emphasizes
 
 ### Prerequisites
 
-- Node.js 18+ recommended
+- Node.js 18+ (see `.nvmrc`)
 - pnpm (recommended) or npm/yarn/bun
 
 ### Install
