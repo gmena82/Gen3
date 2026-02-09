@@ -75,15 +75,16 @@ export function Nav() {
             {/* ── Brand ── */}
             <Link
               href="/"
-              className="flex items-center gap-2 rounded-md px-2 py-1 transition-colors"
+              className="flex items-center gap-2 rounded-md px-2 py-1 transition-all duration-300 hover:drop-shadow-[0_0_12px_rgba(212,177,87,0.55)] hover:scale-[1.02]"
               aria-label="Gen 3 IV Home"
             >
-              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gen3-gold text-white font-bold text-sm">
-                G3
-              </div>
-              <span className={cn('hidden sm:inline text-lg font-display font-bold transition-colors', brandText)}>
-                Gen 3
-              </span>
+              <img
+                src="/logo-white-trsp-s.webp"
+                alt="Gen 3 IV Hydration + Wellness"
+                className="h-9 sm:h-10 w-auto"
+                loading="eager"
+                decoding="async"
+              />
             </Link>
 
             {/* ── Desktop Navigation ── */}
