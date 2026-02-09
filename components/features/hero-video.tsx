@@ -58,7 +58,8 @@ export function HeroVideo() {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed mb-8 font-light italic"
           >
-            {siteConfig.tagline}
+            Premier IV Hydration, Hormone Optimization, and Medical Wellness in
+            Kansas City & Blue Springs.
           </motion.p>
 
           {/* CTA */}

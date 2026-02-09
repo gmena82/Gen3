@@ -16,7 +16,7 @@ export function MissionStatement() {
           transition={{ duration: 0.7 }}
         >
           <p className="text-xl sm:text-2xl lg:text-3xl leading-relaxed text-gen3-black font-light">
-            Our team connects the dots between{' '}
+            Our medical team connects the dots between{' '}
             <strong className="font-semibold text-gradient">your story</strong>,{' '}
             <strong className="font-semibold text-gradient">your labs</strong>, and{' '}
             <strong className="font-semibold text-gradient">your lifestyle</strong>{' '}
@@ -32,9 +32,12 @@ export function MissionStatement() {
           className="mt-8"
         >
           <p className="text-base sm:text-lg text-gen3-gray leading-relaxed max-w-2xl mx-auto">
+            We provide solutions when the system said you&apos;re fine.
+          </p>
+          <p className="text-base sm:text-lg text-gen3-gray leading-relaxed max-w-2xl mx-auto mt-4">
             Our clients don&apos;t invest in visits — they invest in{' '}
             <strong className="font-semibold">transformation.</strong> This is what
-            modern, gold-standard wellness feels like.
+            modern, gold-standard medically supervised wellness feels like.
           </p>
         </motion.div>
 
