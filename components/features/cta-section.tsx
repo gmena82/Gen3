@@ -42,7 +42,7 @@ export function CTASection() {
               href={siteConfig.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-gen3-gold px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:bg-gen3-gold-dark hover:shadow-xl hover:shadow-gen3-gold/20 hover:scale-105"
+              className="hero-gold-neon-btn cta-chat-inner-stroke inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-base font-semibold transition-all duration-300"
             >
               <MessageCircle className="w-5 h-5" />
               Let&apos;s Chat

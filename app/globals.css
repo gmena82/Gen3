@@ -105,6 +105,56 @@ body {
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
+.nav-book-bronze {
+  color: #e2c97b;
+  border: 1px solid rgba(226, 201, 123, 0.7);
+  background: linear-gradient(
+    to bottom,
+    rgba(36, 29, 22, 0.96) 0%,
+    rgba(64, 52, 39, 0.92) 100%
+  );
+  text-shadow: 0 0 8px rgba(226, 201, 123, 0.2);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.26),
+    0 0 0 1px rgba(212, 177, 87, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.nav-book-bronze:hover {
+  color: #f0d995;
+  border-color: rgba(226, 201, 123, 0.9);
+  background: linear-gradient(
+    to bottom,
+    rgba(44, 36, 27, 0.98) 0%,
+    rgba(78, 63, 47, 0.94) 100%
+  );
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.32),
+    0 0 18px rgba(212, 177, 87, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.11);
+}
+
+.cta-chat-dark-glass {
+  color: #ffffff;
+  border-color: rgba(226, 201, 123, 0.5);
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 20, 15, 0.82) 0%,
+    rgba(44, 34, 25, 0.74) 100%
+  );
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.22);
+}
+
+.cta-chat-dark-glass:hover {
+  color: #ffffff;
+  border-color: rgba(226, 201, 123, 0.68);
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 23, 17, 0.86) 0%,
+    rgba(50, 39, 29, 0.78) 100%
+  );
+}
+
 /* When nav is over the dark hero, we want text to still be readable.
    On scroll (white bg), the nav-glass-scrolled kicks in to use dark text. */
 
@@ -131,6 +181,72 @@ body {
     rgba(17, 17, 17, 0.95) 100%
   );
   z-index: 1;
+}
+
+.hero-gold-neon-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    rgba(54, 44, 34, 0.82) 0%,
+    rgba(44, 36, 27, 0.86) 52%,
+    rgba(34, 27, 20, 0.9) 100%
+  );
+  border: 2px solid rgba(226, 201, 123, 0.96);
+  border-radius: 9999px;
+  color: #ffffff;
+  letter-spacing: 0.01em;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+  box-shadow:
+    0 0 0 1px rgba(185, 148, 60, 0.4),
+    0 0 12px rgba(212, 177, 87, 0.82),
+    0 0 24px rgba(212, 177, 87, 0.6),
+    0 0 44px rgba(212, 177, 87, 0.36),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px) saturate(1.08);
+  -webkit-backdrop-filter: blur(12px) saturate(1.08);
+}
+
+.hero-gold-neon-btn:hover {
+  background: linear-gradient(
+    to bottom,
+    rgba(58, 47, 36, 0.86) 0%,
+    rgba(44, 36, 27, 0.9) 52%,
+    rgba(32, 25, 18, 0.94) 100%
+  );
+  border-color: rgba(226, 201, 123, 1);
+  transform: translateY(-1px) scale(1.015);
+  box-shadow:
+    0 0 0 1px rgba(185, 148, 60, 0.55),
+    0 0 14px rgba(226, 201, 123, 0.88),
+    0 0 28px rgba(226, 201, 123, 0.66),
+    0 0 52px rgba(226, 201, 123, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.hero-gold-neon-btn:active {
+  transform: translateY(0) scale(1);
+}
+
+.cta-chat-inner-stroke {
+  color: #ffffff;
+  border: 1px solid rgba(226, 201, 123, 0.58);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  box-shadow:
+    inset 0 0 0 2px rgba(240, 217, 149, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 8px 20px rgba(0, 0, 0, 0.26);
+}
+
+.cta-chat-inner-stroke:hover {
+  color: #ffffff;
+  border-color: rgba(226, 201, 123, 0.72);
+  box-shadow:
+    inset 0 0 0 2px rgba(240, 217, 149, 0.32),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    0 10px 24px rgba(0, 0, 0, 0.3);
 }
 
 /* ───────────────────────────────────────────────────────────

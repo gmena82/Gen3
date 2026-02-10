@@ -73,7 +73,7 @@ export function HeroVideo() {
               href={siteConfig.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-gen3-gold/80 px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:bg-gen3-gold/90 hover:shadow-xl hover:shadow-gen3-gold/25 hover:scale-105"
+              className="hero-gold-neon-btn inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-base font-semibold text-white transition-all duration-300"
             >
               Book Appointment
             </a>

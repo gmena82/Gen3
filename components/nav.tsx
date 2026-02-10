@@ -186,7 +186,7 @@ export function Nav() {
                 href={siteConfig.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden lg:inline-flex items-center justify-center gap-2 rounded-full bg-gen3-gold px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-gen3-gold-dark hover:shadow-lg hover:shadow-gen3-gold/20"
+                className="nav-book-bronze hidden lg:inline-flex items-center justify-center gap-2 rounded-full px-6 py-2.5 text-sm font-semibold transition-all duration-300"
               >
                 Book Appointment
               </a>
