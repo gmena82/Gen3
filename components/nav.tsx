@@ -9,7 +9,7 @@ import { navLinks, services, siteConfig } from '@/lib/site-config';
 
 export function Nav() {
   const pathname = usePathname();
-  const [scrolled, setScrolled] = useState(false);
+  const scrolled = true;
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
@@ -17,12 +17,7 @@ export function Nav() {
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   /* ── Scroll detection ── */
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  // Scroll detection disabled: keep dark nav styling full-time.
 
   /* ── Close mobile menu on route change ── */
   useEffect(() => {
@@ -54,14 +49,14 @@ export function Nav() {
   const navBeforeServices = navLinks.slice(0, 2);
   const navAfterServices = navLinks.slice(2);
 
-  /* Over hero (not scrolled): white text. After scroll: dark text on clear glass. */
-  const textBase = scrolled ? 'text-gen3-black/70' : 'text-white/80';
-  const textActive = scrolled ? 'text-gen3-gold' : 'text-gen3-gold-light';
+  /* Over hero: clear glass. After hero: dark glass with white text. */
+  const textBase = scrolled ? 'text-white/90' : 'text-white/80';
+  const textActive = scrolled ? 'text-gen3-gold-light' : 'text-gen3-gold-light';
   const textHover = scrolled
-    ? 'hover:text-gen3-black hover:bg-black/5'
+    ? 'hover:text-white hover:bg-white/10'
     : 'hover:text-white hover:bg-white/10';
-  const brandText = scrolled ? 'text-gen3-black' : 'text-white';
-  const mobileToggle = scrolled ? 'text-gen3-black/70 hover:text-gen3-black' : 'text-white/80 hover:text-white';
+  const brandText = scrolled ? 'text-white' : 'text-white';
+  const mobileToggle = scrolled ? 'text-white/90 hover:text-white' : 'text-white/80 hover:text-white';
 
   return (
     <>
