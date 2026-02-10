@@ -10,7 +10,7 @@ export function TeamSection() {
   const inView = useInView(ref, { once: true, margin: '-80px' });
 
   return (
-    <section className="section-padding bg-gen3-black" aria-label="Our Team">
+    <section id="meet-the-team" className="section-padding bg-gen3-black" aria-label="Our Team">
       <div ref={ref} className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Text Side */}
