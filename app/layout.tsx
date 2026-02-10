@@ -18,8 +18,11 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
+const resolvedSiteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://gen3-dusky.vercel.app";
+
 export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.siteUrl),
+  metadataBase: new URL(resolvedSiteUrl),
   title: {
     default: "Gen 3 IV | Hydration + Wellness",
     template: "%s | Gen 3 IV",
@@ -39,11 +42,11 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: siteConfig.siteUrl,
+    url: resolvedSiteUrl,
     siteName: "Gen 3 IV | Hydration + Wellness",
     images: [
       {
-        url: "/Gen3-social.png",
+        url: `${resolvedSiteUrl}/Gen3-social.png`,
         width: 1200,
         height: 630,
         alt: "Gen 3 IV Hydration + Wellness",
@@ -55,7 +58,7 @@ export const metadata: Metadata = {
     title: "Gen 3 IV | Hydration + Wellness",
     description:
       "Modern wellness practice providing IV Hydration Therapy, Hormone Optimization, Metabolic Reset, and Functional Medicine.",
-    images: ["/Gen3-social.png"],
+    images: [`${resolvedSiteUrl}/Gen3-social.png`],
   },
 };
 
@@ -70,23 +73,23 @@ const structuredData = {
   "@graph": [
     {
       "@type": "WebSite",
-      "@id": `${siteConfig.siteUrl}/#website`,
-      url: siteConfig.siteUrl,
+      "@id": `${resolvedSiteUrl}/#website`,
+      url: resolvedSiteUrl,
       name: siteConfig.name,
-      image: `${siteConfig.siteUrl}/Gen3-social.png`,
+      image: `${resolvedSiteUrl}/Gen3-social.png`,
       potentialAction: {
         "@type": "SearchAction",
-        target: `${siteConfig.siteUrl}/blog?query={search_term_string}`,
+        target: `${resolvedSiteUrl}/blog?query={search_term_string}`,
         "query-input": "required name=search_term_string",
       },
     },
     {
       "@type": "MedicalBusiness",
-      "@id": `${siteConfig.siteUrl}/#organization`,
+      "@id": `${resolvedSiteUrl}/#organization`,
       name: siteConfig.name,
-      url: siteConfig.siteUrl,
+      url: resolvedSiteUrl,
       telephone: siteConfig.phone,
-      image: `${siteConfig.siteUrl}/Gen3-social.png`,
+      image: `${resolvedSiteUrl}/Gen3-social.png`,
       sameAs: sameAsLinks,
       aggregateRating: {
         "@type": "AggregateRating",
@@ -96,10 +99,10 @@ const structuredData = {
     },
     ...locations.map((location, index) => ({
       "@type": "MedicalClinic",
-      "@id": `${siteConfig.siteUrl}/#location-${index + 1}`,
+      "@id": `${resolvedSiteUrl}/#location-${index + 1}`,
       name: `${siteConfig.shortName} - ${location.name}`,
       parentOrganization: {
-        "@id": `${siteConfig.siteUrl}/#organization`,
+        "@id": `${resolvedSiteUrl}/#organization`,
       },
       address: {
         "@type": "PostalAddress",
@@ -110,7 +113,7 @@ const structuredData = {
         addressCountry: "US",
       },
       telephone: location.phone,
-      url: siteConfig.siteUrl,
+      url: resolvedSiteUrl,
       sameAs: [siteConfig.googleBusinessProfileUrl],
     })),
   ],
