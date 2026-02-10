@@ -27,6 +27,13 @@ export function TestimonialsCarousel() {
             Proven Excellence in{' '}
             <span className="text-gradient italic">Patient Care</span>
           </h2>
+          <div className="mt-4 flex items-center justify-center gap-1" aria-label="5 star rating">
+            <span className="text-gen3-gold text-2xl leading-none">★</span>
+            <span className="text-gen3-gold text-2xl leading-none">★</span>
+            <span className="text-gen3-gold text-2xl leading-none">★</span>
+            <span className="text-gen3-gold text-2xl leading-none">★</span>
+            <span className="text-gen3-gold text-2xl leading-none">★</span>
+          </div>
         </motion.div>
 
         {/* Privacy-safe summary */}
