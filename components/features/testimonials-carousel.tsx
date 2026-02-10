@@ -13,42 +13,42 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: 'Johnna Huke',
+    name: 'M. H.',
     role: 'IV Hydration Client',
     quote:
       'Gen 3 IV Hydration is the best. Best staff, amazing atmosphere, and I felt so cared for every step of the way. I felt heard on what my body needed and they also recommended additional goodies to fuel my body. It is the best ME time to refocus and reset. Cannot wait for my next hydration session.',
     rating: 5,
   },
   {
-    name: 'L Coffey',
+    name: 'R. C.',
     role: 'NAD+ Therapy Client',
     quote:
       'I had the NAD injection with B-12 and glutathione push and compression therapy. My legs looked less swollen, I could walk three levels of stairs without stopping, and I had more energy. I already feel younger after my first session and I am excited to continue therapy.',
     rating: 5,
   },
   {
-    name: 'Andrla Teter',
+    name: 'S. T.',
     role: 'Immune Booster IV Client',
     quote:
       'I came in right before the Kansas City Marathon after a bad cold and decided to try the Immune Booster IV with add-ons including the NAD+ injection. By the next day my cold was gone, I felt amazing, and I was ready to run. I loved it so much I came back for a second NAD+ shot.',
     rating: 5,
   },
   {
-    name: 'Jo Hughs',
+    name: 'P. H.',
     role: 'Wellness Testing Client',
     quote:
       'Gen 3 has been life-changing for me. I did the autoimmune panel and finally got real answers about my food sensitivities and genetic makeup. Because of that, I have been able to change what I eat, lose weight, and feel so much better. The staff explained everything clearly and made the process stress-free.',
     rating: 5,
   },
   {
-    name: 'Amanda Gehring',
+    name: 'T. G.',
     role: 'Family Care Client',
     quote:
       'Gen 3 is a true blessing. My daughter was recovering from surgery and became dehydrated. The nurses and staff got her in the same day and took wonderful care of her. It is a true family atmosphere - you can feel the love and care they put into each person.',
     rating: 5,
   },
   {
-    name: 'Nicole Taulman',
+    name: 'K. T.',
     role: 'Hormone Consult Client',
     quote:
       'After months of frustration, I scheduled a hormone consultation. Bethany listened, made a recommendation based on my labs, and HRT changed my life in days. I also did a detox infusion and realized I was breathing clearly again. I am grateful for the care and feel like a million bucks.',
