@@ -21,12 +21,13 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-flex items-center gap-2 mb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gen3-gold text-white font-bold text-sm">
-                G3
-              </div>
-              <span className="text-xl font-display font-bold text-white">
-                Gen 3
-              </span>
+              <img
+                src="/logo-white-trsp-s.webp"
+                alt="Gen 3 IV Hydration + Wellness"
+                className="h-10 w-auto"
+                loading="eager"
+                decoding="async"
+              />
             </Link>
             <p className="text-sm leading-relaxed text-white/50 max-w-xs">
               Modern wellness practice providing solutions when the system said
@@ -45,7 +46,7 @@ export function Footer() {
 
           {/* Services Column */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-white/30 mb-4">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-gen3-gold mb-4">
               Services
             </h3>
             <ul className="space-y-2.5">
@@ -72,7 +73,7 @@ export function Footer() {
 
           {/* Company Column */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-white/30 mb-4">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-gen3-gold mb-4">
               Company
             </h3>
             <ul className="space-y-2.5">
@@ -91,7 +92,7 @@ export function Footer() {
 
           {/* Locations Column */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-white/30 mb-4">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-gen3-gold mb-4">
               Locations
             </h3>
             <div className="space-y-5">
