@@ -4,8 +4,15 @@ export const siteConfig = {
   name: "Gen 3 IV | Hydration + Wellness",
   shortName: "Gen 3",
   tagline: "We provide solutions when the system said you're fine.",
+  siteUrl: "https://www.gen3iv.com",
   bookingUrl: "https://www.joinblvd.com/b/gen-3-iv/widget#/locations",
   phone: "(816) 599-0053",
+  googleBusinessProfileUrl: "https://share.google/xotJ4r8Zk4Ddvn4la",
+  socialLinks: {
+    google: "https://share.google/xotJ4r8Zk4Ddvn4la",
+    instagram: "",
+    facebook: "",
+  },
 } as const;
 
 export const navLinks: NavLink[] = [

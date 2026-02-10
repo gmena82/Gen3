@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, MapPin, Clock } from "lucide-react";
+import { Phone, MapPin, Clock, Instagram, Facebook } from "lucide-react";
 import { siteConfig, services, locations } from "@/lib/site-config";
 
 const footerLinks = {
@@ -41,6 +41,41 @@ export function Footer() {
               >
                 {siteConfig.phone}
               </a>
+            </div>
+            <div className="mt-5 flex items-center gap-3">
+              {siteConfig.socialLinks.google && (
+                <a
+                  href={siteConfig.socialLinks.google}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Google Business Profile"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gen3-gold/40 bg-gen3-gold/10 text-gen3-gold transition-all duration-300 hover:border-gen3-gold hover:bg-gen3-gold hover:text-gen3-black"
+                >
+                  <MapPin className="h-4 w-4" />
+                </a>
+              )}
+              {siteConfig.socialLinks.instagram && (
+                <a
+                  href={siteConfig.socialLinks.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gen3-gold/40 bg-gen3-gold/10 text-gen3-gold transition-all duration-300 hover:border-gen3-gold hover:bg-gen3-gold hover:text-gen3-black"
+                >
+                  <Instagram className="h-4 w-4" />
+                </a>
+              )}
+              {siteConfig.socialLinks.facebook && (
+                <a
+                  href={siteConfig.socialLinks.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gen3-gold/40 bg-gen3-gold/10 text-gen3-gold transition-all duration-300 hover:border-gen3-gold hover:bg-gen3-gold hover:text-gen3-black"
+                >
+                  <Facebook className="h-4 w-4" />
+                </a>
+              )}
             </div>
           </div>
 
