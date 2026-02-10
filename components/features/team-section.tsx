@@ -30,7 +30,7 @@ export function TeamSection() {
               the frustration of feeling unheard, dismissed, and degraded when it
               comes to your health.
             </p>
-            <p className="text-white/50 text-base leading-relaxed mb-8">
+            <p className="text-white/70 text-base leading-relaxed mb-8">
               Our hope is to help you discover what a fulfilled life looks like
               in regards to your health. We affirm, assist, and provide you with
               a better approach. And we&apos;re here to show you.
