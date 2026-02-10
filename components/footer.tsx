@@ -155,13 +155,13 @@ export function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
-        <div className="container-custom flex flex-col sm:flex-row items-center justify-between gap-4 py-6 text-xs text-white/30">
+        <div className="container-custom flex flex-col sm:flex-row items-center justify-between gap-4 py-6 text-xs text-gen3-gold/75">
           <p>&copy; {new Date().getFullYear()} Gen 3 IV Hydration + Wellness. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link href="/privacy" className="hover:text-white/50 transition-colors">
+            <Link href="/privacy" className="hover:text-gen3-gold-light transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="hover:text-white/50 transition-colors">
+            <Link href="/terms" className="hover:text-gen3-gold-light transition-colors">
               Terms of Use
             </Link>
             <span>Medical Advice Disclaimer</span>
